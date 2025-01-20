@@ -1,0 +1,132 @@
+/* Reset default styles */
+*, body, h2, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none; /* Hidden by default, shown on mobile */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.all-links {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Space between links */
+}
+
+.all-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.all-links li a:hover {
+  color: #007bff; /* Blue on hover */
+}
+
+header a{
+  margin-left: 40px;
+  text-decoration: none;
+  color: #000000;
+  height: 100%;
+  padding: 20px 0;
+  display: inline-block;
+}
+
+.homepage{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url("/src/assets/business-1753098_1280-1030x731.png"); /* the picture */
+  background-position: center 65%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+
+.homepage .content a{
+  color: white;
+  border: 5px rgba(39, 39, 39, 0.696) outset;
+  background-color: black;
+  padding: 25px;
+  border-radius: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: 2s;
+}
+
+.homepage .content a:hover{
+  color: rgb(0, 0, 0);
+  border: 5px rgba(255, 255, 255, 0.655) outset;
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  border-radius: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: 2s;
+}
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
+
+  .all-links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .all-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .all-links li {
+    margin: 10px 0;
+  }
+}
