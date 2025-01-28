@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
+
 }
 
 header {
@@ -48,7 +49,7 @@ header {
 .all-links li a {
   text-decoration: none;
   color: #333;
-  font-size: 1rem;
+  font-size: 1.3rem;
   transition: color 0.3s ease;
 }
 
@@ -69,19 +70,80 @@ header a{
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url("/src/assets/business-1753098_1280-1030x731.png"); /* the picture */
+  background-color: #000000;
+}
+
+.homepage .left-column{
+  /* margin-right: 80rem; */
+  /* margin-bottom: 300px; */
+  /* height: 45vh;
+  /* align-items: center; */ 
+  padding: 12rem;
+  border: #007bff 10px inset;
+  margin-top: 190px;
+  float:left;
+  width: 35%;
+  background-color: #ffffff;
+}
+
+.homepage .right-column img{
+  float:right;
+  width: 55%;
+  height: 90vh;
+  /* width: 50%; */
+  /* margin-left: 50rem; */
   background-position: center 65%;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
+  border: 10px #55ffc9 outset;
+  border-radius: 3px;
+  margin-top: 100px;
 }
 
 
 
+.homepage .content {
+  display: flex;
+  height: 85%;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homepage .content h1{
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.homepage .content .text{
+  margin-bottom: 50px;
+  align-items: center;
+  color: #000000;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
 
 .homepage .content a{
   color: white;
+  border: 5px rgba(255, 255, 255, 0.696) outset;
   border: 5px rgba(39, 39, 39, 0.696) outset;
-  background-color: black;
+  background-color: rgba(255, 233, 233, 0.497);
+  padding: 25px;
+  border-radius: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: 2s;
+  justify-content: center;
+}
+
+.homepage .content a:hover{
+  color: rgba(0, 0, 0, 0.565);
+  border: 5px rgba(39, 39, 39, 0.696) outset;
+  background-color: rgba(255, 255, 255, 0.473);
   padding: 25px;
   border-radius: 20px;
   font-size: 2rem;
@@ -89,16 +151,7 @@ header a{
   transition: 2s;
 }
 
-.homepage .content a:hover{
-  color: rgb(0, 0, 0);
-  border: 5px rgba(255, 255, 255, 0.655) outset;
-  background-color: rgb(255, 255, 255);
-  padding: 25px;
-  border-radius: 20px;
-  font-size: 2rem;
-  text-decoration: none;
-  transition: 2s;
-}
+
 
 
 
