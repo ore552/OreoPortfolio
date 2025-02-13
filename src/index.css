@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
-
+  list-style: none;
 }
 
 header {
@@ -66,135 +66,93 @@ header a{
   display: inline-block;
 }
 
-.homepage{
+.homepage {
   height: 100vh;
   width: 100%;
   position: relative;
   background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.homepage .left-column{
-  /* margin-right: 80rem; */
-  /* margin-bottom: 300px; */
-  /* height: 45vh;
-  /* align-items: center; */ 
-  padding: 12rem;
-  border: #007bff 10px inset;
-  margin-top: 190px;
-  float:left;
-  width: 100%;
+/* Left Column */
+.homepage .left-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem; /* Reduced for better balance */
+  border: 10px inset #007bff;
+  margin-top: 100px; /* Adjusted for better placement */
+  max-width: 100%; /* Ensures responsiveness */
   background-color: #ffffff;
   height: 70vh;
-  transition: 5s ease;
+  transition: 0.5s ease-in-out;
   border-radius: 20px;
 }
 
-.homepage .left-column:hover{
-  padding: 12rem;
-  border: #ff0000 10px outset;
-  margin-top: 190px;
-  /* float:; */
-  width: 100%;
-  background-color: #ffffff;
-  height: 70vh;
-  transition: 5s ease;
-  /* color: #ffff; */
-  /* background-color: #000000; */
-  border-radius: 500px;
-
+/* Hover Effect for Left Column */
+.homepage .left-column:hover {
+  border: 10px outset #ff0000;
+  transform: scale(0.9); /* Smooth shrink effect */
+  border-radius: 50px;
 }
 
-.homepage .left-column:hover .a{
-  color: rgba(0, 0, 0, 0.565);
-  border: 5px rgba(39, 39, 39, 0.696) outset;
-  background-color: rgba(255, 255, 255, 0.473);
-  padding: 25px;
-  border-radius: 20px;
-  font-size: 2rem;
-  text-decoration: none;
-  transition: 2s;
-  margin: 100px;
-}
-
-/* .homepage .right-column img{
-  float:right;
-  width: 45%;
-  height: 80vh;
-  /* width: 50%; */
-  /* margin-left: 50rem; */
-  /* background-position: center 65%;
-  background-size: contain;
-  background-attachment: fixed;
-  border: 10px #55ffc9 outset;
-  border-radius: 3px;
-  margin-top: 100px;
-
-} */
-
-
-
+/* Content Section */
 .homepage .content {
   display: flex;
-  height: 85%;
-  z-index: 3;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-}
-
-.homepage .content h1{
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.homepage .content .text{
-  margin-bottom: 50px;
   align-items: center;
+  justify-content: center;
+  height: auto;
+  z-index: 3;
+  text-align: center;
+}
+
+/* Header */
+.homepage .content h1 {
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 15px;
   color: #000000;
-  font-size: 1.5rem;
-  text-align: center;
-  justify-content: center;
+}
+
+/* Text Styling */
+.homepage .content .text {
+  max-width: 800px;
+  color: #000000;
+  font-size: 1.99rem;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  margin: 100px;
+  margin: 20px auto; /* Centering effect */
 }
 
-
-
-.homepage .content a{
-  margin: 100px;
-  /* margin-top: 500px; */
+/* Buttons */
+.homepage .content a {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 5px rgba(210, 210, 210, 0.7) outset;
+  background-color: rgba(255, 233, 233, 0.5);
   color: black;
-  border: 5px rgba(255, 255, 255, 0.696) outset;
-  /* border: 5px rgba(39, 39, 39, 0.696) outset; */
-  background-color: rgba(255, 233, 233, 0.497);
-  padding: 25px;
-  border-radius: 20px;
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
-  transition: 1s;
-  justify-content: center;
+  border-radius: 20px;
   text-align: center;
-  /* display: none; */
+  transition: all 0.3s ease-in-out;
+  margin: 10px;
 }
 
-
-.homepage .content a:hover{
-  color: rgba(0, 0, 0, 0.565);
-  border: 5px rgba(39, 39, 39, 0.696) outset;
-  background-color: rgba(255, 255, 255, 0.473);
-  padding: 25px;
-  border-radius: 20px;
-  font-size: 2rem;
-  text-decoration: none;
-  transition: 1s;
-  margin: 100px;
-  width: 100%;
+/* Button Hover Effect */
+.homepage .content a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 5px rgba(85, 85, 85, 0.7) outset;
+  transform: scale(1.05);
 }
+
 
 .project{
   background-color:black;
-  color: white;
+  color: #ffffff;
 }
 
 
@@ -268,6 +226,39 @@ header a{
   color: #fff; 
 }
 
+.aboutForm{
+ background-color: rgb(0, 0, 0);
+ height: 100vh;
+ display: flex;
+}
+
+.contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem; 
+  border: 20px inset #000000;
+  margin-top: 200px; 
+  max-width: 100%; 
+  background-color: #ffffff;
+  height: 70vh;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+  
+}
+
+.contents .text{
+  /* border: 10px unset green;
+  border-radius: 10px;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  z-index: 3;
+  text-align: center;
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   .menu-toggle {
@@ -294,5 +285,79 @@ header a{
 
   .all-links li {
     margin: 10px 0;
+  }
+
+  .homepage .left-column{
+    width: 600px;
+    justify-content: center;
+    display: block;
+    font-size: 1rem;
+  }
+
+  .homepage .left-column:hover{
+    width: 400px;
+    font-size: 1rem;
+  }
+
+  .homepage .content {
+    display: flex;
+    height: 85%;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .homepage .content h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .homepage .content .text{
+    margin-bottom: 50px;
+    align-items: center;
+    color: #000000;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 100px;
+  }
+  
+  
+  
+  .homepage .content .a{
+    margin: 0px;
+    color: black;
+    border: 5px rgba(255, 255, 255, 0.696) outset;
+    /* border: 5px rgba(39, 39, 39, 0.696) outset; */
+    background-color: rgba(255, 233, 233, 0.497);
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 1s;
+    justify-content: center;
+    text-align: center;
+    /* display: none; */
+  }
+
+  /* .homepage .content .ab{
+
+  } */
+  
+  
+  .homepage .content a:hover{
+    color: rgba(0, 0, 0, 0.565);
+    border: 5px rgba(39, 39, 39, 0.696) outset;
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 1s;
+    margin: 100px;
+    width: 100%;
   }
 }
