@@ -6,13 +6,13 @@ import Hero from './Pages/Hero'
 import Project from './Pages/Project'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
-
+import Footer from './Components/Footer'
 
 function App() {
 
   return (
     <>
-      <div>
+      
         <Navbar/>
         <Routes>
           <Route path='/' element={<Homepage/>}/>
@@ -21,7 +21,8 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
-      </div>
+        <Footer/>
+      
 
     </>
   )

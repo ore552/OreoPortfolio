@@ -336,6 +336,33 @@ header a{
   background-color: #525252;
 }
 
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #000;
+  padding: 20px 0;
+}
+
+footer div{
+  padding: 0 10px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer span{
+  color: #fff;
+}
+
+footer a{
+  padding: 0;
+  margin: 10px;
+  color: #ff0000;
+  text-decoration: none;
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   .menu-toggle {
