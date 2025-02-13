@@ -259,6 +259,83 @@ header a{
   text-align: center;
 }
 
+.contact{
+  display: flex;
+  background-color: #333333;
+  height: 100vh;
+}
+
+.contact .row{
+  margin: 60px 60px 90px;
+  padding: 25px;
+  border-radius: 30px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 300px;
+  background-color: #000;
+  color: whitesmoke;
+  border: #525252 solid 10px;
+}
+
+.contact .row h2{
+  font-size: 3rem;
+  margin: 100px;
+}
+
+.contact .row .col{
+  padding: 0 10px;
+  width: calc(100% / 2 - 50p);
+  display: flex;              
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center; 
+
+}
+
+.contact .col p{
+  margin-bottom: 10px;
+}
+
+.contact form input{
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+}
+
+.contact form textarea{
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  height: 150px;
+  outline: none;
+  resize: none;
+  border: 1px solid #bfbfbf;
+}
+
+.contact form button{
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #333;
+  transition: 0.2s ease;
+}
+
+.contact form button:hover{
+  background-color: #525252;
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   .menu-toggle {
