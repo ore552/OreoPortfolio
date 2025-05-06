@@ -107,6 +107,33 @@ const Project = () => {
             <PiArrowSquareUpRightFill />
           </div>
         </a>
+
+        <a href="https://mes-quiz.vercel.app/" className='card-item'>
+          <img src="src/assets/13.png" alt="img" />
+          <span className='guesscar'>MES Quiz</span>
+          <h3>MES = Math, English and Science, subjects I like. Many were hard, some were easy others were downright mean. It is a very long test with very interesting answers, these answers are made by me (yes I know right?!) and were styled especially to help you, extra time for extra hard questions!</h3>
+          <div className='arrow'>
+            <PiArrowSquareUpRightFill />
+          </div>
+        </a>
+
+        <a href="https://logo-ipsum-website-ozi6.vercel.app/" className='card-item'>
+          <img src="src/assets/12.png" alt="img" />
+          <span className='guesscar'>Logo Ipsum</span>
+          <h3>I didn't create this, I mean I did but I copied from someone else, I did do a little of my things into it and I did another first: Use Tailwind CSS to style it up. Also, I learnt the origin of lorem ipsum in a fictional story that was really funny, check the blog page to see what I mean!</h3>
+          <div className='arrow'>
+            <PiArrowSquareUpRightFill />
+          </div>
+        </a>
+
+        <a href="https://analog-clock-java-script-eight.vercel.app/" className='card-item'>
+          <img src="src/assets/14.png" alt="img" />
+          <span className='guesscar'>Analog Clock</span>
+          <h3>The prime of me using Coding Nepal was long gone, but I still use it. In this one, I used html, css and Javascript: been a long time since I used them! This analog clock was a project that made me have to scrap half the work, only to realise that it was a simple mistake I could've just deleted. It can change from light to dark so that's good.</h3>
+          <div className='arrow'>
+            <PiArrowSquareUpRightFill />
+          </div>
+        </a>
       </div>
       
         {/* 
