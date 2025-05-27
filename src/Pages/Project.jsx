@@ -134,6 +134,14 @@ const Project = () => {
             <PiArrowSquareUpRightFill />
           </div>
         </a>
+
+        <a href="https://stop-watch-two-gilt.vercel.app/" className='card-item'>
+          <img src="src/assets/15.png" alt="img" />
+          <span className='guesscar'>Stopwatch</span>
+          <h3>This one was the very first independent project I did. I was given the task; create a stopwatch website. I used a variety of different videos and websites to help me finally finish the website but in the end, I styled it so well and the functionalities worked perfectly. I love this project: I hope you do too!</h3>
+          <PiArrowSquareUpRightFill />
+          <div/>
+        </a>
       </div>
       
         {/* 
