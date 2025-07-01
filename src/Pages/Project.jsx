@@ -142,9 +142,17 @@ const Project = () => {
           <PiArrowSquareUpRightFill />
           <div/>
         </a>
+
+        <a href="https://rock-paper-scissors-game-liart-tau.vercel.app/" className='card-item'>
+          <img src="src/assets/16.png" alt="img" />
+          <span className='guesscar'>Rock Paper Scissors</span>
+          <h3>I used Coding Nepal for this, I don't like using it though. I mean, the lack of creativity is the thing I don't like about using it. All I have to do is type the thing - I could even copy and paste it. I ended up doing it anyways, I got annoyed, I swept it off and finished it. The animations should be symmetrical but it isn't, please don't take too much notice to the bug.</h3>
+          <PiArrowSquareUpRightFill />
+          <div/>
+        </a>
       </div>
       
-        {/* 
+         
 
 
           {/* <div className='card'>
